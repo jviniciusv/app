@@ -1,8 +1,8 @@
-define(['views/index'], function(indexView){
+define(['router'], function(router){
 	var initialize = function(){
-		indexView.render();
+		Backbone.history.start();
 	}
 	return{
-		initialize : initialize
-	};
+		initialize: initialize
+	}
 });
