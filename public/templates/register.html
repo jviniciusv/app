@@ -1,15 +1,39 @@
 <h2>Registre-se:</h2>
 
+<br />
+<form action="/register" method="POST">
 <label>Nome</label><br />
-<input type="text" name="login" />
+<input type="text" name="name" />
+<br />
+
+<label>Email</label><br />
+<input type="text" name="email" />
 <br />
 
 <label>Senha</label><br />
 <input type="password" name="password" />
 <br />
 
-<label>Confirmar Senha</label><br />
-<input type="password" name="cpassword" />
+<!-- <label>Confirmar Senha</label><br /> -->
+<!-- <input type="password" name="cpassword" /> -->
+<!-- <br /> -->
+
 <br />
 
+<!-- <span class="show_face" style="cursor: pointer;">Registrar com o face</span><br /> -->
+
+<div class="face" style="display: none;">
+<iframe src="https://www.facebook.com/plugins/registration?
+             client_id=113869198637480&
+             redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fecho%2F&
+             fields=name,birthday,gender,location,email"
+        scrolling="auto"
+        frameborder="no"
+        style="border:none; background: none;"
+        allowTransparency="true"
+        width="500"
+        height="330">
+</iframe>
+</div>
 <input type="submit" value="Registrar" />
+</form>

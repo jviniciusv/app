@@ -1,4 +1,4 @@
-define(['views/index', 'views/register'], function(indexView, registerView){	
+define(['views/login', 'views/register'], function(loginView, registerView){	
 		var Model = Backbone.Router.extend({
 			initialize: function(){
 				$('body').css('background', "lightblue");
@@ -12,7 +12,7 @@ define(['views/index', 'views/register'], function(indexView, registerView){
 			},
 			
 			index : function(){
-				indexView.render();
+				loginView.render();
 			},
 			
 			register : function(){
